@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title> tugas 1</title>
+        <script src="jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $(".sembunyi").click(function(){$("#foto").hide("slow")});
+            $(".tampil").click(function(){$("#foto").show("slow")});
+            $(".hide").click(function(){$("#gambar").hide("slow")});
+            $(".show").click(function(){$("#gambar").show("slow")});
+            });
+        </Script>
+    </head>
+    <body>
+        <button class="sembunyi">sembunyikan</button>
+        <button class="tampil">tampilkan</button>
+        <p><img id="foto" src="gambar1.jpg" height="200" width="200"></p>
+        <button class="hide">sembunyikan</button>
+        <button class="show">tampilkan</button>
+        <p><img id="gambar" src="gambar2.jpg" height="200" width="200"></p>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title> Tugas 2</title>
+        <script type="text/javascript" src="jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+        </script>
+            <style type="text/css">
+                div {
+                    background: yellow;
+                    color: white;
+                    height: 100px;
+                    width: 150px;
+                }
+                div.dbl {
+                    background: red;
+                    color: black;
+                }
+                p {
+                    background: yellow;
+                    color: white;
+                    height: 100px;
+                    width: 150px;
+                }
+                p.dbl {
+                    background: red;
+                    color: black;
+                }
+                p {
+                    background: blue;
+                    color: white;
+                    height: 100px;
+                    width: 150px;
+                }
+                p.dbl {
+                    background: green;
+                    color: black;
+                }
+            </style>
+    </head>
+    <body>
+        <h3> Klik pada setiap kotak untuk mengubah warnanya </h3>
+        <div></div> &emsp; <p></p>
+        <script>
+            var divdbl = $( "div" ).first();
+            divdbl.dblclick(function() {
+            divdbl.toggleClass( "dbl" );
+            });
+            var pdbl = $( "p" ).first();
+            pdbl.dblclick(function() {
+            pdbl.toggleClass( "dbl" );
+            });
+        </script>
+    </body>
+</html>
